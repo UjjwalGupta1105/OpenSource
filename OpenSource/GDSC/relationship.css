@@ -1,0 +1,276 @@
+*{
+    color: black;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+}
+video{
+    object-fit:fill;
+    position: fixed;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(6px);
+    width: 80.5%;
+    height: 86%;
+}
+.template_img{
+    position: fixed;
+    z-index: -2;
+    object-fit: fill;
+    background-image: linear-gradient(315deg, #cae786 0%, #82bc23 74%);
+    height: 100%;
+    width: 100%;
+}
+.inner_body{
+    position: relative;
+    top: 50px;
+    margin: 0px 140px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow:10px 10px 10px;
+}
+.sidenav{
+    background-color: rgba(227, 217, 217, 0.678);
+    width:250px;
+    height: 600px;
+    border-radius: 20px;
+    cursor:pointer;
+    border:1px solid black;
+    margin-left: 0px;
+    transition: width 0.4s ease-in-out 0.07s;
+}
+.sidenav:hover{
+    width:250px;
+}
+#user{
+    border-radius: 50%;
+}
+.user{
+    display: flex;
+    background-color: rgba(87, 98, 97, 0.625);
+    height: 70px;
+    width: auto;
+    border-radius: 20px;
+    border:1px solid black;
+    overflow: hidden;
+    
+}
+.user img{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    transition: border-radius 0.5s ease-out 0.1s;
+}
+.user img:hover{
+    border-radius: 20px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+h2{
+    font-size: 18px;
+    font-family: 'comic sans ms';
+}
+li{
+    display: flex;
+    column-gap: 20px;
+    overflow: hidden;
+    position: relative;
+    left:-20px;
+    transition: background-color 0.4s linear 0.2s,
+                border-radius 0.4s linear 0.2s,
+                transform 0.5s ease-out 0.1s;
+    
+}
+#contact{
+    height: 50px;
+    transition: height 0.4s ease-in 0.2s;
+}
+#contact:hover{
+    height: 100px;
+}
+#logout{
+    margin-top: 140px;
+}
+li:hover{
+    transform: translatex(8px);
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 10px;
+}
+#re{
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 10px;
+    position: relative;
+    left: -8px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.midcontent{
+    height:100%;
+    padding: 0px 50px 50px 50px ;
+}
+.header{
+    position: relative;
+    top: -20px;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.314);
+    border-radius: 20px;
+}
+h1{
+    font-size: 60px;
+    font-family: 'comic sans ms';
+    /* text-shadow: 5px 5px 5px black; */
+}
+.rightnav{
+    position: relative;
+    background-color: rgba(227, 217, 217, 0.178);
+    width:100px;
+    height: 100%;
+    border-radius: 20px;
+    cursor:pointer;
+    
+}
+.wellness_img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.wellness_img:hover{
+    transform: translatey(8px);
+    transition: transform 0.5s ease-out 0.1s;
+    box-shadow: -10px -10px 7px;
+}
+.header video{
+    position: relative;
+    z-index: 1;
+}
+#mid_body{
+    height:200px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px;
+    
+}
+.mid_body{
+    display: flex;
+    column-gap: 20px;
+}
+h3{
+    font-size: 30px;
+    margin-top: 0px;
+    text-decoration: underline;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* middle content CSS */
+
+.Middle_content{
+    background-color: #6ebeb087;
+    cursor: pointer;
+    width: 940px;
+    height: 600px;
+    box-sizing: content-box;
+    border: 1px solid;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: overflow 0.3s ease;
+}
+.Middle_content:hover{
+    overflow-y: scroll;
+}
+
+
+
+header {
+    color: #fff;
+    padding: 20px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Top_heading1 {
+    margin: 0px;
+    margin-right: 45px;
+    font-size:45px;
+    text-align: center;
+    background: linear-gradient(black,brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 3px 3px 5px black; */
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    background-color: #d4cbe5;
+}
+.nav_links:hover{
+    color:black;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #796f6f;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #c3c5489c;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.content{
+    height:800px;
+    width:900px;
+}
+#section5 ul li{
+    text-align: left;
+}
+.social{
+    text-decoration: none;
+    color: white;
+}
+.social:hover{
+    color: rgb(0, 128, 255);
+}
